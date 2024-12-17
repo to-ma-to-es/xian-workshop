@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- css style sheet-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <title>Xi'an Study Tour</title>
+  </head>
+
+  <body>
+    <!-- Heading //////////////////////////// -->
+    <div class="heading">
+
+      <img src="./media/title.svg" class="title" id="" alt="Typographic heading reading: Xi'an" >
+      <svg id="dash" viewBox="0 0 42 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40.8591 1L1.31641 78.1471" stroke="black" stroke-width="1.08549"/>
+      </svg>
+      <div class="heading-text">
+        <h1>Sustainability Workshop</h1>
+        <h2>11/11/2024  - 17/11/2024</h2>
+      </div>
+    </div>
+
+    <!-- Grid //////////////////////////// -->
+      
+    <div class="grid-container">
+
+      <div class="grid-item" onclick="openOverlay('1', 'Arrival on Campus','Introduction to Xi’an','11/11/2024','DAY 1 - First Day on Campus ', 'media/inside-library.jpg', 'media/oatly-lecture.jpg', 'media/prev-day-one.jpg', 'The first day of the tour was an introduction to Eurasia University and the city of Xi’an.  We were welcomed by Vanessa, the local Eurasia lecturer.  She introduced us to our workshop with a brief history of Xi’an. She explained its evolution as an ancient city, once the capital of China during the Western Zhou, Western Han, Sui, Northern Zhou, and Tang imperial dynasties. A fascinating point mentioned in this lecture was the Feng Shui in Xi’an’s development. The city’s location was carefully chosen for its optimal natural surroundings, which protected it from extreme weather and ensured mild temperatures year-round, making it an ideal settlement in ancient times. This introduction to Xi’an’s history was not only engaging but also essential for understanding the context of the project we were about to undertake.', 'After this lecture, we were introduced to the Chinese students and given time to explore the campus. The lines of shops, wide roads, numerous scooters, massive sports fields, and rows of pine & ginkgo trees were impressive. I was deeply grateful for the chance to experience this environment as a student. While I’ve traveled overseas for holidays and family visits, experiencing a place as a student felt entirely different.')" id="day-one">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 1</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">11/11/2024</span>
+        </div>
+        
+      </div>
+      <div class="grid-item" onclick="openOverlay('2', 'The Muslim Quarter','Old Xi’an','12/11/2024','DAY 2 - Exploring Xi’an', 'media/prev-day-two.jpg', 'media/noble-house.jpg', 'media/mosque-gate.jpg', 'The second day of our stay focused on exploring areas in Xi’an of historical and cultural significance. These included the former residence of Gao Yue Song, the Muslim Quarter, the Great Mosque, the Old Residential Area, and the Museum. The historical former residence of Gao Yue Song provided insight into the living conditions and family dynamics of the old noble class. The building’s extensive restoration over time reflected its cultural importance.', 'Xi’an is home to a Muslim minority, and the Muslim quarter is a place where many live to be close to the Great Mosque, an ancient and culturally significant complex. Vanessa shared insights from her own studies, explaining how this small community has evolved over time. She highlighted the changing habits of worship across generations and how these shifts influence their daily lives. We were given time to explore the area, and try out signature foods, such as Biang Biang noodles and Chinese style hotpot. During my exploration of this area, I got comfortable with using Alipay and weChat pay - alternatives to using credit cards, which are not available in China. As a Digital Design student, I found these systems fascinating, especially in comparison to platforms I’ve used or studied in the West. WeChat’s extensive range of functions stood out to me. While such extensive multifunctionality is often discouraged in Western app design, its effectiveness and popularity in China seem to prove its practicality.')" id="day-two">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 2</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">12/11/2024</span>
+        </div>
+
+      </div>
+      <div class="grid-item" onclick="openOverlay('3', 'Food Sustainability','Jie Fang District','13/11/2024','DAY 3 - Fieldwork in the Jie Fang District', 'media/prev-day-three.jpg', 'media/jie-fang.jpg', 'media/local-conversation.jpg', 'The third day was split into lectures and fieldwork. We learned about current practices and nuances within small, low socio-economic Chinese communities, as well as the follow the thing/person concept—a framework for examining a particular object or person and the network of interactions surrounding them. An interesting point discussed in Vanessa’s lecture was the unique relationship that some Chinese people have with public and private space, and how over time these spaces change to best suit the needs/wants of residents and stakeholders. This touched on things like the benefits and downfalls of tourism, urbanisation and municipal changes ', 'We had the opportunity to speak with a community leader of the district, who shared insights with us on current sustainability and social community initiatives. My group chose to focus on food sustainability practices in the area and explore how food waste is managed. We learned about a program called “Little Dining Table,” run by a mothers’ group. Through this initiative, mothers prepare dinners for children from local schools, providing them with a small income while fostering community engagement.')" id="day-three">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 3</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">13/11/2024</span>
+        </div>
+
+      </div>
+      <div class="grid-item" onclick="openOverlay('4', 'Food Sustainability','Group work','14/11/2024','DAY 4 - Project Production Phase', 'media/prev-day-four.jpg', 'media/group-work.jpg', 'media/canteen-worker.jpg', 'Day four of the tour was project production day, and my group began mapping out the Jie fang district. We investigated food disposal sites and examined the food management habits of the locals. One key finding was that the district outsourced 100% of its food from other districts, as it lacked food markets of its own. Due to the high population density, community gardens were only feasible within schools and served primarily educational purposes rather than as a supplemental food source. Despite this, the gardens were valuable to the community, so we explored ways to expand their impact by teaching schoolchildren how to manage their food waste more effectively.', 'We also researched methods for food waste management that could be implemented on a larger scale, such as diverting food waste to biomass incinerators instead of regular incinerators, creating a renewable energy source. In addition to this, we analysed the Eurasia campus food management system to identify effective practices that could be adapted to the Jie Fang district.')"id="day-four">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 4</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">14/11/2024</span>
+        </div>
+
+      </div>
+      <div class="grid-item" onclick="openOverlay('5', 'Initial Presentation','Infographic Development','15/11/2024','DAY 5 - Initial Presentation and Poster Production', 'media/initial-poster-low-res.jpg', 'media/map.jpg', 'media/prev-day-five.jpg', 'Day five was the initial presentation and feedback day. We received guidance from our team leader Jen and our lecturer Vanessa on how to move forward with our project. Since our project encompassed multiple solutions, they suggested shifting from a linear study to a branching approach. This led us to create an infographic that illustrated different research paths while emphasising the connections between our ideas.', 'After the presentation we focused on creating an infographic for the exhibition. We created several maps, diagrams and image collages to communicate our ideas as simply & visually as possible. OAt a later stage, we revised the infographic to include improved imagery for a more engaging and eye-catching display. This project provided me with deep insights into food waste practices in the Jie Fang District and on a global scale. I felt that it pushed me to utilise skills beyond digital, such as interviewing, mapmaking, sustainability-driven design thinking, infographic creation, and cross-language communication.')" id="day-five">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 5</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">15/11/2024</span>
+        </div>
+
+      </div>
+      <div class="grid-item" onclick="openOverlay('6', 'Final Presentation','Exhibition','16/11/2024','DAY 6 - Final Presentation and Exhibition', 'media/final-display.jpg', 'media/final-poster-low-res.jpg', 'media/prev-day-six.jpg', 'Day six was the final day of the workshop, which concluded with an exhibition. We had the opportunity to present our findings and reflect upon our experiences. As part of the closing, we exchanged parting gifts with the Chinese students. Although our time together was short, saying goodbye was difficult as they had become good friends and incredibly supportive hosts.', 'Overall, I felt that this workshop was an incredibly valuable experience. Working within such a short timeframe with students from different disciplines who spoke a different language challenged me to reflect on my communication skills and find more effective ways to express my ideas and understand others. Together, we overcame many obstacles, and I felt proud of the final result we achieved as a team.')" id="day-six">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 6</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">16/11/2024</span>
+        </div>
+
+      </div>
+      <div class="grid-item" onclick="openOverlay('7', 'Terracotta Warriors','The Big Goose Pagoda','17/11/2024','DAY 7 - Terracotta Warriors & big Goose Pagoda', 'media/pagoda.jpg', 'media/terracotta-warriors.jpg', 'media/prev-day-seven.jpg', 'Day seven of the tour was free day, so I took this time to do some sightseeing of culturally significant locations in Xi’an. The Terracotta Museum and archaeological pits were particularly impressive, offering a fascinating look into the legacy of Qinshihuang, and the Great Chinese Empire.The wild goose pagoda was beautiful and unique in its architecture, highlighting the ancient Indian influence of the structure. This added a layer of insight into the diversity of Xi’an during ancient times, as it was a key point on the Silk Road and a major capital city.', 'Overall, This study tour was a valuable opportunity that deepened my understanding of cultural and sustainability issues, whilst improving my ability to collaborate across disciplines and languages. The sprint-like schedule helped me adapt quickly and think critically under pressure. The tour was also an incredible opportunity to explore Chinese culture in an authentic way and connect with local communities.')" id="day-seven">
+
+        <div class="hover-content">
+          <span class="hover-text-day">Day 7</span>
+          <div class="underline"></div>
+          <span class="hover-text-date">17/11/2024</span>
+        </div>
+
+      </div>
+
+    </div>
+    
+    <!-- Overlays -->
+    <div class="overlay" id="overlay-day-one">
+      <button class="close-btn" onclick="closeOverlay()"><img id="chevron" src="./media/chevron.svg">Back</button>
+      <div class="overlay-content">
+
+        <div class="collage">
+
+          <div class="stack-item stack-item-top">
+            <img id="image-top" class="collage-img image-top" src=" "> <!-- Interchange -->
+          </div>
+          
+          <div class="stack-item stack-item-middle">
+            <img id="image-middle" class="collage-img image-middle" src="./media/prev-day-two.jpg"> <!-- Interchange -->
+          </div>
+
+          <div class="stack-item stack-item-bottom">
+            <img id="image-bottom" class="collage-img image-bottom" src="./media/prev-day-three.jpg"> <!-- Interchange -->
+          </div>
+          
+          <div class="stack-item collage-info">
+
+            <div class="activities">
+              <p id="activity-one">Activity 1</p> <!-- Interchange -->
+              <p id="activity-two">Activity 2</p> <!-- Interchange -->
+            </div>
+
+            <div class="day-number-box">
+              <div class="vertical-line"></div>
+              <p><span>D</span><span>A</span> <span>Y</span><span id="day-no">X</span></p> <!-- Interchange -->
+            </div>
+
+
+          </div>
+
+          <div class="stack-item collage-date">
+            <p id="date">date here</p> <!-- Interchange -->
+            <div class="collage-date-underline"></div>
+          </div>
+          
+        </div>
+
+        <div class="reflection">
+          <!-- Interchange --><h3 id="reflection-title">DAY 1 - First Day on Campus </h3> 
+          <!-- Interchange --><p id="reflection-p-one">The first day of the tour was an introduction to Eurasia University and the city of Xi’an.  We were welcomed by Vanessa, the local Eurasia lecturer.  She introduced us to our workshop with a brief history of Xi’an. She discussed its evolution as an ancient city that was once the capital of China during the Western Zhou, Western Han, Sui, Northern Zhou, and Tang imperial dynasties. A fascinating point mentioned in this lecture was the Feng Shui of Xi’an, and how it was chosen as the perfect location for a settlement in ancient times due to its optimal natural surroundings that would protect the city from extreme weather hazards and ensure mild temperatures year-round. This opportunity to learn about Xi’an history was as interesting as it was integral to beginning to understand the context of the project we were to produce.</p>
+          <!-- Interchange --><p id="reflection-p-two">After this lecture, we were introduced to the Chinese students and given time to explore the campus. The lines of shops, wide roads, numerous scooters, massive sportsfields, and rows of pine & ginkgo trees were impressive, and I can’t exaggerate the gratitude I felt to be able to experience this place as a student myself. I have been overseas before for holidays and family visits, but to experience a place as a student felt entirely different and incredibly valuable.</p>
+          
+        </div>
+
+      </div>
+    </div>
+    
+    
+    
+    
+    <!-- GSAP script -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Main js file -->
+    <script src="main.js"></script>
+  </body>

@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+/* Heading -------------------------------*/
+
+.heading {
+    /*border: solid red 2px; */
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: "Indie Flower", cursive;
+    font-size: 0.8rem;
+}
+
+h2 {
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+}
+
+.heading-text {
+    margin: 0 1rem 0 1rem;
+}
+
+#dash {
+    margin: 0 1rem 0 1rem;
+    max-height: 15vh;
+}
+
+.title {
+    height: 2.5rem;
+    margin: 0 1rem 0 1rem;
+}
+
+/* Grid ------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-gap: 1.2rem;
+    margin: 1rem 0.2rem 0 0.2rem;
+}
+.grid-item {
+    display: flex; /* For child div (flex:1) */
+    background-color: grey;
+    /*border: solid red 2px;*/
+    min-height: 6rem;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+#day-one {
+    background-image: url('./media/prev-day-one.jpg'); 
+    background-position: center;   
+}
+
+#day-two {
+    background-image: url('./media/prev-day-two.jpg'); 
+    background-position: center;   
+}
+
+#day-three {
+    background-image: url('./media/prev-day-three.jpg'); 
+    background-position: center;   
+}
+
+#day-four {
+    background-image: url('./media/prev-day-four.jpg'); 
+    background-position: center;   
+}
+
+#day-five {
+    background-image: url('./media/prev-day-five.jpg'); 
+    background-position: 30% center;   
+}
+
+#day-six {
+    background-image: url('./media/prev-day-six.jpg'); 
+    background-position: 40% center;   
+}
+
+#day-seven {
+    background-image: url('./media/prev-day-seven.jpg'); 
+    background-position: 65% center;   
+}
+
+
+/* Hover contents ----------------------------*/
+
+
+.grid-item {
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.hover-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1rem 0 1rem; /* as opposed to just top padding of 2rem */
+
+    flex: 1; /* Fill entire parent div */
+    background-color: rgba(255, 255, 255, 0.7);
+
+    /* animate */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.underline {
+    height: 1.6px;
+    background-color: black;
+
+    /* animate */
+    width: 0; 
+    transition: width 0.6s ease; 
+}
+
+.hover-text-day {
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 0.6em;
+}
+
+.hover-text-date {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-top: 0.6em;
+}
+
+.grid-item:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s 0s;
+}
+
+.grid-item:hover .underline {
+    width: 100%; /* Expand to full width */
+}
+
+
+/* Overlays */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    display: none;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(250,250,250); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.overlay-content {
+    position: relative;
+
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    font-family: "Barlow", serif;
+    font-size: 1.1rem;
+    margin: 2rem 6rem;
+    cursor: pointer;
+}
+
+#chevron {
+    margin-right: 0.4rem;
+}
+
+
+
+/* img collage -------------------------- */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-content);
+    grid-auto-rows: min-content;
+    position: relative;
+    margin: 0 6rem;
+  }
+
+
+.stack-item-top {
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 2;
+    width: 18vw;
+    height: 24vw;
+}
+
+.stack-item-middle {    
+    grid-column: 1 / -1;
+    grid-row: 1; 
+    z-index: 3;
+    transform: translateY(55%) translateX(10%);
+    width: 16vw;
+    height: 20vw;
+    border: solid white 0.6rem;
+    align-self: end;
+    justify-self: end;
+}
+
+.stack-item-bottom {    
+    grid-column: 2;
+    grid-row: 2;
+    z-index: 1; 
+    margin-top: calc(2 * 2%);
+    margin-left: calc(2 * 5%);
+    width: 19vw;
+    height: 16vw;
+}
+
+.image-middle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-bottom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collage-img {
+    display: block;
+}
+
+/* Collage text ------------- */
+
+.collage-date {
+    grid-row: 2;
+    align-self: end;
+    justify-self: end;
+    border-bottom: black solid 1px;
+    width: 16vw;
+    text-align: right;
+    font-size: 0.8rem;
+    font-family: "Indie Flower", cursive;
+    transform: translateX(10%);
+}
+
+
+.collage-info {
+    grid-row: 1;
+    grid-column: 1;
+    height: 14vw;
+    justify-self: end;
+    display: flex;
+}
+
+.activities {
+    align-self: end;
+    text-align: right;
+    font-family: "Indie Flower", cursive;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.day-number-box {
+    border-left: solid black 2px;
+    padding: 0 3rem 0 0.5rem;
+    display: flex;
+    align-self: end;
+    font-family: "Barlow", serif;
+    font-size: 1.3rem;
+    
+}
+
+#day-no {
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%; /* Make the background circular */
+    width: 2rem; /* Set width (adjust as needed) */
+    height: 2rem;
+    line-height: 2rem; 
+}
+
+
+.day-number-box p {
+    display: flex;
+    flex-direction: column;  /* Arrange the letters in a vertical stack */
+    align-items: center;     /* Center letters horizontally */
+    
+}
+
+.day-number-box p span {
+    display: block;
+    transform: rotate(0deg);  /* Keep each letter upright */
+}
+
+
+/* reflection --------------- */
+
+.reflection {
+    align-self: center;
+    font-family: "Barlow", serif;
+    margin-right: 6rem;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.reflection p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #1c1c1c;
+}
+
+
+/* Media Queries ------------------------------- */
+
+/* For Dektops */ 
+@media all and (min-width: 768px){
+    
+    /* Heading ------------------ */
+    .heading { margin-left: 4rem; }
+    h1 { font-size: 1.2rem;}
+    h2 { font-size: 0.9rem;}
+    #dash { max-height: 10vh;}
+
+    /* Grid ------------------ */
+    .grid-container {
+        grid-template-columns: repeat(7, 1fr); /* 7 columns of equal width */
+        grid-auto-rows: auto; /* Ensures one row adapts to content */
+        grid-gap: 2rem;
+        margin: 4rem 11rem 2rem 11rem;
+    }
+    .grid-item {
+        min-height: 60vh;
+    }
+
+    /* Overlay --------------- */
+
+    .overlay-content {
+        display: flex;
+    }
+}
+
+/* For Mobile */ 
+@media all and (max-width: 768px){
+    .overlay-content {
+        margin-top: 4rem;
+    }
+
+    .reflection {
+        margin: 2rem;
+    }
+
+}
